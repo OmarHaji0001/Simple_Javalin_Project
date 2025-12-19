@@ -12,6 +12,7 @@ public class Main {
 
         app.get("/api/json", JsonController.getResponseJson);
         app.get("/api/html", HtmlController.getResponseHtml);
+        app.post("/api/echo", EchoController.echoBody);
 
         app.start(7070);
         System.out.println("server started: http://localhost:7070");
